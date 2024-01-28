@@ -1,4 +1,8 @@
-import { ContactType } from 'src/types'
+export type ContactType = {
+	name: string
+	link: string
+	image: string
+}
 
 const contacts: ContactType[] = [
 	{

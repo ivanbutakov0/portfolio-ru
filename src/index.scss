@@ -29,6 +29,11 @@ a {
 	color: inherit;
 }
 
+button {
+	background-color: transparent;
+	border: none;
+}
+
 /* GLOBAL STYLES */
 body {
 	font-family: 'DM Sans', sans-serif;
@@ -39,7 +44,7 @@ body {
 }
 
 .container {
-	max-width: 1220px;
+	max-width: 1366px;
 	margin: 0 auto;
 	padding: 0 20px;
 }

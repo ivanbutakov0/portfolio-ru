@@ -1,4 +1,4 @@
-import contacts from 'src/data/contacts.js'
+import contacts from 'src/data/contacts'
 import styles from './Contacts.module.scss'
 
 const Contacts = () => {
@@ -6,7 +6,7 @@ const Contacts = () => {
 		<div>
 			<ul className={styles.list}>
 				{contacts.map(contact => (
-					<li className={styles.item} key={contact.name}>
+					<li title={contact.name} className={styles.item} key={contact.name}>
 						<a href={contact.link} target='_blank'>
 							<img
 								className={styles.image}
