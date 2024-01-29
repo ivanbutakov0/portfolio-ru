@@ -1,9 +1,12 @@
 html {
-	scroll-snap-type: y mandatory;
 	scroll-behavior: smooth;
+	scroll-snap-type: y mandatory;
 }
 
 section {
 	height: 100dvh;
 	scroll-snap-align: center;
+	scroll-snap-stop: always;
+	overflow: hidden;
+	scroll-behavior: smooth;
 }

@@ -35,7 +35,9 @@ const MenuItem = ({ name, link }: MenuItemTypes) => {
 			whileTap={{ scale: 0.95 }}
 			onClick={toggle}
 		>
-			<a href={link}>{name}</a>
+			<a className={styles.link} href={link}>
+				{name}
+			</a>
 		</motion.li>
 	)
 }

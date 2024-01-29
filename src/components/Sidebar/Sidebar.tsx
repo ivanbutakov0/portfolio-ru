@@ -1,6 +1,5 @@
 import { motion, useCycle } from 'framer-motion'
 import { MouseEvent, createContext, useEffect, useRef } from 'react'
-import disableScroll from 'src/utils/disableScroll'
 import { MenuToggle } from './MenuToggle/MenuToggle'
 import Navigation from './Navigation/Navigation'
 import styles from './Sidebar.module.scss'
@@ -49,8 +48,6 @@ const Sidebar = () => {
 			document.removeEventListener('click', handleOutsideClick as any)
 		}
 	}, [isOpen])
-
-	disableScroll({ isOpen, styles })
 
 	return (
 		<SidebarContext.Provider value={() => toggleOpen()}>
