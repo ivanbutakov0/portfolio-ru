@@ -4,11 +4,11 @@ import './styles.scss'
 
 const Home = () => {
 	return (
-		<div className='container'>
+		<>
 			<Hero />
 			<Services />
 			<Services />
-		</div>
+		</>
 	)
 }
 export default Home

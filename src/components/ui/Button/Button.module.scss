@@ -1,0 +1,27 @@
+.button {
+	border: 1px solid #fff;
+	padding: 15px;
+	display: inline-block;
+	border-radius: 10px;
+	color: #000;
+	font-size: 12px;
+	transition: all 0.2s ease-in;
+}
+
+.outlined {
+	color: #fff;
+}
+
+.outlined:hover {
+	background: #fff;
+	color: #000;
+}
+
+.filled {
+	background: #fff;
+}
+
+.filled:hover {
+	background: transparent;
+	color: #fff;
+}

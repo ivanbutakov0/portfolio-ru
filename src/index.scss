@@ -1,51 +1,27 @@
-/* RESET */
-*,
-*::before,
-*::after {
-	box-sizing: border-box;
-}
-
-* {
-	margin: 0;
-	padding: 0;
-}
-
-img,
-picture,
-video,
-canvas,
-svg {
-	display: block;
-	max-width: 100%;
-}
-
-ul,
-ol {
-	list-style: none;
-}
-
-a {
-	text-decoration: none;
-	color: inherit;
-}
-
-button {
-	background-color: transparent;
-	border: none;
-}
+@use 'src/sass/_variables' as variables;
+@import 'src/sass/_reset.scss';
 
 /* GLOBAL STYLES */
 
-body {
+html {
 	font-family: 'DM Sans', sans-serif;
 	font-weight: 400;
 	font-size: 20px;
 	background-color: #0c0c1d;
-	color: lightgray;
+	color: variables.$text-color;
 }
 
 .container {
 	max-width: 1366px;
 	margin: 0 auto;
 	padding: 0 20px;
+}
+
+h1 {
+	font-size: variables.$heading;
+}
+
+h2 {
+	font-size: variables.$subheading;
+	color: variables.$primary-color;
 }
