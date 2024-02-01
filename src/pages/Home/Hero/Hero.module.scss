@@ -17,17 +17,30 @@
 			.subtitle {
 				text-transform: uppercase;
 				letter-spacing: 8px;
+				z-index: 1;
 			}
 
 			.buttonsContainer {
 				display: flex;
 				gap: 20px;
+				z-index: 1;
 			}
 
 			.scroll {
 				height: 50px;
 				width: 50px;
+				z-index: 1;
 			}
+		}
+		.slidingTextContainer {
+			position: absolute;
+			bottom: 0;
+			font-size: 50vh;
+			color: rgba(255, 255, 255, 0.03);
+			line-height: 1;
+			font-weight: 700;
+			white-space: nowrap;
+			user-select: none;
 		}
 
 		.imageContainer {
