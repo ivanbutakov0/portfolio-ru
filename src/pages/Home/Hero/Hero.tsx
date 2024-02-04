@@ -53,7 +53,7 @@ const Hero = () => {
 						className={styles.textContainer}
 						variants={textVariants}
 						initial='initial'
-						animate='animate'
+						whileInView='animate'
 					>
 						<motion.h2 className={styles.subtitle} variants={textVariants}>
 							Hi, I'm Ivan
