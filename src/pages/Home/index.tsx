@@ -1,4 +1,5 @@
 import Parallax from 'src/pages/Home/Parallax/Parallax'
+import Contacts from './Contacts/Contacts'
 import Hero from './Hero/Hero'
 import Portfolio from './Portfolio/Portfolio'
 import Services from './Services/Services'
@@ -12,7 +13,7 @@ const Home = () => {
 			<Services />
 			<Parallax type='portfolio' />
 			<Portfolio />
-			<Services />
+			<Contacts />
 		</>
 	)
 }

@@ -35,3 +35,12 @@ button {
 	color: inherit;
 	cursor: pointer;
 }
+
+input,
+textarea {
+	border: none;
+	outline: none;
+	background: transparent;
+	color: inherit;
+	resize: none;
+}
