@@ -4,9 +4,9 @@ type ServiceItemType = {
 	button: string
 }
 
-const serviceItems = [
+const serviceItems: ServiceItemType[] = [
 	{
-		title: 'Branding',
+		title: 'Branding 1',
 		text: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore
 		illum blanditiis sit fugiat nesciunt consequatur minus laboriosam
 		voluptates aliquid possimus, esse sapiente repudiandae. Atque,
@@ -14,7 +14,7 @@ const serviceItems = [
 		button: 'Ok',
 	},
 	{
-		title: 'Branding',
+		title: 'Branding 2',
 		text: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore
 		illum blanditiis sit fugiat nesciunt consequatur minus laboriosam
 		voluptates aliquid possimus, esse sapiente repudiandae. Atque,
@@ -22,7 +22,7 @@ const serviceItems = [
 		button: 'Ok',
 	},
 	{
-		title: 'Branding',
+		title: 'Branding 3',
 		text: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore
 		illum blanditiis sit fugiat nesciunt consequatur minus laboriosam
 		voluptates aliquid possimus, esse sapiente repudiandae. Atque,
@@ -30,7 +30,7 @@ const serviceItems = [
 		button: 'Ok',
 	},
 	{
-		title: 'Branding',
+		title: 'Branding 4',
 		text: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore
 		illum blanditiis sit fugiat nesciunt consequatur minus laboriosam
 		voluptates aliquid possimus, esse sapiente repudiandae. Atque,

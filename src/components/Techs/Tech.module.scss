@@ -1,0 +1,15 @@
+@use 'src/sass/_variables' as variables;
+
+.tech {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	padding: 10px;
+	border-radius: 10px;
+	background-color: lighten($color: variables.$primary-color, $amount: 5);
+
+	img {
+		height: 20px;
+		width: 20px;
+	}
+}

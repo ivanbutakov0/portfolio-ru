@@ -53,7 +53,7 @@ const Services = () => {
 
 				<motion.div className={styles.listContainer} variants={variants}>
 					{serviceItems.map(item => (
-						<div className={styles.item}>
+						<div className={styles.item} key={item.title}>
 							<h3>{item.title}</h3>
 							<p>{item.text}</p>
 							<button className={styles.button}>{item.button}</button>
