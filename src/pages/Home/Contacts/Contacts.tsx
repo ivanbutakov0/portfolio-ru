@@ -1,5 +1,7 @@
+import emailjs from '@emailjs/browser'
 import { motion, useInView } from 'framer-motion'
-import { useRef, useState } from 'react'
+import { FormEvent, useRef, useState } from 'react'
+import FormMessage from 'src/components/FormMessage/FormMessage'
 import styles from './Contacts.module.scss'
 
 const variants = {
@@ -19,9 +21,28 @@ const variants = {
 
 const Contacts = () => {
 	const ref = useRef(null)
-	const formRef = useRef(null)
+	const formRef = useRef<HTMLFormElement | null>(null)
 	const [error, setError] = useState(false)
 	const [success, setSuccess] = useState(false)
+
+	const sendEmail = (e: FormEvent<HTMLFormElement>) => {
+		e.preventDefault()
+
+		emailjs
+			.sendForm('service_l6fs2zk', 'template_l85c6ae', formRef.current || '', {
+				publicKey: '_jwm2Qcs8hhe7Uz5R',
+			})
+			.then(
+				() => {
+					setSuccess(true)
+					console.log('SUCCESS!')
+				},
+				(error: any) => {
+					setError(true)
+					console.log('FAILED...', error.text)
+				}
+			)
+	}
 
 	const isInView = useInView(ref, { margin: '-100px' })
 	return (
@@ -39,7 +60,7 @@ const Contacts = () => {
 						</motion.h2>
 						<motion.div className={styles.mailContainer} variants={variants}>
 							<h3>Mail</h3>
-							<p>ivanbutakov000@gmail.com</p>
+							<p>ivan.butakov.work@gmail.com</p>
 						</motion.div>
 					</motion.div>
 					<div className={styles.formContainer}>
@@ -79,19 +100,29 @@ const Contacts = () => {
 							initial={{ opacity: 0 }}
 							whileInView={{ opacity: 1 }}
 							transition={{ delay: 4, duration: 1 }}
+							onSubmit={sendEmail}
 						>
-							<input type='text' required placeholder='Name' name='name' />
-							<input type='email' required placeholder='Email' name='email' />
+							<input type='text' required placeholder='Your Name' name='name' />
+							<input
+								type='email'
+								required
+								placeholder='Your Email'
+								name='email'
+							/>
 							<textarea
 								name='message'
-								placeholder='Message'
+								placeholder='Your Message'
 								rows={8}
 							></textarea>
 							<button className={styles.btn} type='submit'>
 								Submit
 							</button>
-							{error && 'Error'}
-							{success && 'Success'}
+							{error && (
+								<FormMessage type='error'>Something went wrong</FormMessage>
+							)}
+							{success && (
+								<FormMessage type='success'>Message sent</FormMessage>
+							)}
 						</motion.form>
 					</div>
 				</motion.div>
