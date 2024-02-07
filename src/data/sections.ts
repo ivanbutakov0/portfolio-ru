@@ -20,10 +20,6 @@ const sections: sectionType[] = [
 		name: 'Contacts',
 		link: '#contacts',
 	},
-	{
-		name: 'About',
-		link: '#about',
-	},
 ]
 
 export default sections
