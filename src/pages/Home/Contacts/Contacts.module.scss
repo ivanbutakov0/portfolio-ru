@@ -1,3 +1,5 @@
+@import 'src/sass/_responsiveMixins';
+
 .contacts {
 	padding: 20px 0;
 
@@ -7,60 +9,95 @@
 		align-items: center;
 		gap: 50px;
 		height: 100%;
-	}
 
-	.contentContainer {
-		flex: 1;
-		display: flex;
-		flex-direction: column;
-		gap: 40px;
-
-		.title {
-			font-size: 100px;
-			line-height: 88px;
+		@include mobile {
+			flex-direction: column;
+			text-align: center;
 		}
 
-		.mailContainer {
-			h3 {
-			}
-
-			p {
-				font-weight: 300;
-			}
-		}
-	}
-
-	.formContainer {
-		flex: 1;
-		position: relative;
-
-		.phoneSvg {
-			stroke: orange;
-			position: absolute;
-			margin: auto;
-			z-index: -1;
-		}
-
-		.form {
+		.contentContainer {
+			flex: 1;
 			display: flex;
 			flex-direction: column;
-			gap: 20px;
+			gap: 40px;
 
-			input,
-			textarea {
-				padding: 20px;
-				border: 1px solid gray;
-				border-radius: 5px;
+			@include tablet {
+				gap: 20px;
 			}
 
-			.btn {
-				padding: 15px;
-				background-color: orange;
-				color: #000;
-				transition: all 0.2s ease-in;
+			@include mobile {
+				flex: none;
+			}
 
-				&:hover {
-					background-color: darken($color: orange, $amount: 10);
+			.title {
+				font-size: 100px;
+				line-height: 88px;
+
+				@include tablet {
+					font-size: 80px;
+					line-height: 1;
+				}
+
+				@include mobile {
+					font-size: 60px;
+				}
+			}
+
+			.mailContainer {
+				h3 {
+				}
+
+				p {
+					font-weight: 300;
+				}
+			}
+		}
+
+		.formContainer {
+			flex: 1;
+			position: relative;
+
+			@include mobile {
+				flex: none;
+				width: 100%;
+			}
+
+			.phoneSvg {
+				stroke: orange;
+				position: absolute;
+				margin: auto;
+				z-index: -1;
+
+				@include mobile {
+					width: 100%;
+
+					svg {
+						margin: 0 auto;
+					}
+				}
+			}
+
+			.form {
+				display: flex;
+				flex-direction: column;
+				gap: 20px;
+
+				input,
+				textarea {
+					padding: 20px;
+					border: 1px solid gray;
+					border-radius: 5px;
+				}
+
+				.btn {
+					padding: 15px;
+					background-color: orange;
+					color: #000;
+					transition: all 0.2s ease-in;
+
+					&:hover {
+						background-color: darken($color: orange, $amount: 10);
+					}
 				}
 			}
 		}

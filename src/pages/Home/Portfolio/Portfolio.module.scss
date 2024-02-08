@@ -1,3 +1,5 @@
+@import 'src/sass/_responsiveMixins.scss';
+
 .portfolio {
 	position: relative;
 
@@ -8,6 +10,10 @@
 		text-align: center;
 		padding-top: 50px;
 		z-index: 2;
+
+		@include mobile {
+			top: 80%;
+		}
 
 		h2 {
 			font-size: 46px;

@@ -1,6 +1,16 @@
+@import 'src/sass/_responsiveMixins.scss';
+
 .header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	padding: 20px 0;
+
+	@include desktop {
+		justify-content: flex-end;
+
+		span {
+			display: none;
+		}
+	}
 }

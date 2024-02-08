@@ -1,3 +1,5 @@
+@import 'src/sass/_responsiveMixins';
+
 .parallax {
 	position: relative;
 	display: flex;
@@ -9,6 +11,11 @@
 		z-index: 1;
 		font-size: 100px;
 		color: #fff;
+		text-align: center;
+
+		@include mobile {
+			font-size: 70px;
+		}
 	}
 
 	.mountains,
@@ -20,6 +27,14 @@
 		right: 0;
 		bottom: 0;
 		left: 0;
+	}
+
+	.mountains,
+	.planets {
+		@include mobile {
+			background-size: contain !important;
+			background-repeat: no-repeat !important;
+		}
 	}
 
 	.mountains {

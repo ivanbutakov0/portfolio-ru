@@ -1,3 +1,5 @@
+@import 'src/sass/_responsiveMixins';
+
 @mixin titleButtonShape {
 	width: 300px;
 	height: 100px;
@@ -11,11 +13,16 @@
 	.contentContainer {
 		display: flex;
 		flex-direction: column;
-		gap: 20px;
+		gap: 30px;
 		align-items: center;
 		justify-content: space-between;
 		height: 100%;
 		overflow: auto;
+
+		@include mobile {
+			gap: 20px;
+			justify-content: center;
+		}
 
 		/* Hide scrollbar for Chrome, Safari and Opera */
 		&::-webkit-scrollbar {
@@ -33,6 +40,10 @@
 			text-align: right;
 			font-weight: 200;
 			gap: 20px;
+
+			@include mobile {
+				display: none;
+			}
 
 			p {
 				color: gray;
@@ -60,15 +71,34 @@
 				justify-content: center;
 				gap: 40px;
 
+				@include tablet {
+					flex-direction: column;
+					text-align: center;
+					gap: 20px;
+				}
+
 				img {
 					@include titleButtonShape();
 					object-fit: cover;
+
+					@include mobile {
+						width: 200px;
+						height: 50px;
+					}
 				}
 
 				h2 {
 					font-size: 3.5rem;
 					font-weight: 100;
 					text-transform: capitalize;
+
+					@include tablet {
+						font-size: 46px;
+					}
+
+					@include mobile {
+						font-size: 36px;
+					}
 
 					strong:hover {
 						color: orange;
@@ -85,6 +115,12 @@
 					color: #000;
 					font-size: 30px;
 					text-transform: uppercase;
+
+					@include mobile {
+						width: 200px;
+						height: 50px;
+						font-size: 20px;
+					}
 				}
 			}
 		}
@@ -96,6 +132,10 @@
 			justify-content: center;
 			flex-wrap: wrap;
 
+			@include mobile {
+				flex-direction: column;
+			}
+
 			.item {
 				max-width: 272px;
 				padding: 30px;
@@ -106,14 +146,24 @@
 				text-align: justify;
 				transition: all 0.1s ease-in;
 
-				&:hover {
-					background-color: lightgray;
-					color: #000;
+				@include mobile {
+					border: none;
+					padding: 10px;
 				}
 
 				h3 {
 					font-size: 20px;
 					text-align: center;
+
+					@include mobile {
+						font-size: 26px;
+					}
+				}
+
+				p {
+					@include mobile {
+						display: none;
+					}
 				}
 
 				button {
@@ -121,6 +171,14 @@
 					color: #000;
 					padding: 8px;
 					transition: all 0.2s ease-in;
+
+					@include mobile {
+						background-color: transparent;
+						color: orange;
+						border: 1px solid orange;
+						border-radius: 5px;
+						min-width: 200px;
+					}
 				}
 
 				button:hover {

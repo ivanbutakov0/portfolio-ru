@@ -6,7 +6,7 @@ import styles from './Hero.module.scss'
 
 const textVariants: any = {
 	initial: {
-		x: -500,
+		x: '-100%',
 		opacity: 0,
 	},
 	animate: {
@@ -58,7 +58,9 @@ const Hero = () => {
 						<motion.h2 className={styles.subtitle} variants={textVariants}>
 							Hi, I'm Ivan
 						</motion.h2>
-						<motion.h1 variants={textVariants}>Web developer</motion.h1>
+						<motion.h1 className={styles.title} variants={textVariants}>
+							Web developer
+						</motion.h1>
 						<motion.div
 							className={styles.buttonsContainer}
 							variants={textVariants}

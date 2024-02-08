@@ -5,8 +5,8 @@ import styles from './Services.module.scss'
 const variants = {
 	initial: {
 		opacity: 0,
-		x: -500,
-		y: 100,
+		x: '-80%',
+		y: '30%',
 	},
 	animate: {
 		opacity: 1,
