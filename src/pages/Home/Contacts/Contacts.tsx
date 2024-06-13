@@ -61,6 +61,8 @@ const Contacts = () => {
 						<motion.div className={styles.mailContainer} variants={variants}>
 							<h3>Mail</h3>
 							<p>ivan.butakov.work@gmail.com</p>
+							<h3>Telegram</h3>
+							<p>@ivanbutakov0</p>
 						</motion.div>
 					</motion.div>
 					<div className={styles.formContainer}>
