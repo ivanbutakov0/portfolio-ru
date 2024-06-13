@@ -59,7 +59,7 @@ const Hero = () => {
 							Hi, I'm Ivan
 						</motion.h2>
 						<motion.h1 className={styles.title} variants={textVariants}>
-							Web developer
+							Frontend developer
 						</motion.h1>
 						<motion.div
 							className={styles.buttonsContainer}
@@ -86,9 +86,6 @@ const Hero = () => {
 					>
 						Sliding text
 					</motion.div>
-					<div className={styles.imageContainer}>
-						<img className={styles.image} src='/hero.png' alt='' />
-					</div>
 				</div>
 			</div>
 		</section>
