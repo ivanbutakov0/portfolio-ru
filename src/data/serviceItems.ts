@@ -6,36 +6,19 @@ type ServiceItemType = {
 
 const serviceItems: ServiceItemType[] = [
 	{
-		title: 'Branding 1',
-		text: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore
-		illum blanditiis sit fugiat nesciunt consequatur minus laboriosam
-		voluptates aliquid possimus, esse sapiente repudiandae. Atque,
-		tempora commodi qui quod quisquam ex!`,
-		button: 'Ok',
+		title: 'UI/UX Design',
+		text: `I can help you design user interfaces and user experiences that are both beautiful and functional. This includes everything from designing the layout of your website or app to creating wireframes and prototypes.`,
+		button: 'Contact me',
 	},
 	{
-		title: 'Branding 2',
-		text: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore
-		illum blanditiis sit fugiat nesciunt consequatur minus laboriosam
-		voluptates aliquid possimus, esse sapiente repudiandae. Atque,
-		tempora commodi qui quod quisquam ex!`,
-		button: 'Ok',
+		title: 'Frontend Development',
+		text: `I can turn your UI/UX designs into a real, functional website or app. This includes writing the code that makes your website or app work.`,
+		button: 'Contact me',
 	},
 	{
-		title: 'Branding 3',
-		text: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore
-		illum blanditiis sit fugiat nesciunt consequatur minus laboriosam
-		voluptates aliquid possimus, esse sapiente repudiandae. Atque,
-		tempora commodi qui quod quisquam ex!`,
-		button: 'Ok',
-	},
-	{
-		title: 'Branding 4',
-		text: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore
-		illum blanditiis sit fugiat nesciunt consequatur minus laboriosam
-		voluptates aliquid possimus, esse sapiente repudiandae. Atque,
-		tempora commodi qui quod quisquam ex!`,
-		button: 'Ok',
+		title: 'Backend Development',
+		text: `I can create the server-side functionality for your website or app. This includes writing the code that stores and manages your data.`,
+		button: 'Contact me',
 	},
 ]
 

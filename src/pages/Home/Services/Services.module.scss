@@ -128,7 +128,7 @@
 		.listContainer {
 			font-size: 14px;
 			display: flex;
-			align-items: center;
+			//align-items: center;
 			justify-content: center;
 			flex-wrap: wrap;
 
@@ -142,6 +142,7 @@
 				border: 1px solid gray;
 				display: flex;
 				flex-direction: column;
+				justify-content: space-between;
 				gap: 10px;
 				text-align: justify;
 				transition: all 0.1s ease-in;
