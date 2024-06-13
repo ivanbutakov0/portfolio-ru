@@ -167,7 +167,9 @@
 					}
 				}
 
-				button {
+				.button {
+					display: block;
+					text-align: center;
 					background-color: orange;
 					color: #000;
 					padding: 8px;
@@ -182,7 +184,7 @@
 					}
 				}
 
-				button:hover {
+				.button:hover {
 					scale: 1.1;
 				}
 			}

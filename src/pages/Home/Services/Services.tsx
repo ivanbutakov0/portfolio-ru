@@ -56,7 +56,9 @@ const Services = () => {
 						<div className={styles.item} key={item.title}>
 							<h3>{item.title}</h3>
 							<p>{item.text}</p>
-							<button className={styles.button}>{item.button}</button>
+							<a href='#contacts' className={styles.button}>
+								{item.button}
+							</a>
 						</div>
 					))}
 				</motion.div>
