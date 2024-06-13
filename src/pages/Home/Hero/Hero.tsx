@@ -28,20 +28,6 @@ const textVariants: any = {
 	},
 }
 
-const slidingVariants: any = {
-	initial: {
-		x: '100%',
-	},
-	animate: {
-		x: '-150%',
-		transition: {
-			duration: 20,
-			repeat: Infinity,
-			ease: 'linear',
-		},
-	},
-}
-
 const Hero = () => {
 	return (
 		<section id='homepage' className={styles.homepage}>
@@ -77,14 +63,6 @@ const Hero = () => {
 							src='/scroll.png'
 							alt=''
 						/>
-					</motion.div>
-					<motion.div
-						className={styles.slidingTextContainer}
-						variants={slidingVariants}
-						initial='initial'
-						animate='animate'
-					>
-						Sliding text
 					</motion.div>
 				</div>
 			</div>
