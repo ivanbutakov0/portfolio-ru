@@ -18,7 +18,7 @@ const projects: ProjectType[] = [
 		id: 1,
 		name: 'uFUTURE',
 		img: '/uFUTURE-main.png',
-		desc: 'This project involved creating a massive open online course (MOOC) platform using the MERN stack.',
+		desc: 'Этот проект включал в себя создание платформы massive open online course (MOOC) с использованием MERN stack.',
 		link: 'https://u-future-client.vercel.app/',
 		github: 'https://github.com/ivanbutakov0/u-future',
 		techs: [
@@ -35,7 +35,7 @@ const projects: ProjectType[] = [
 		id: 2,
 		name: 'Super Estate',
 		img: '/superEstate-preview.png',
-		desc: 'I developed a full-fledged real estate platform called "Super Estate" using the MERN stack (MongoDB, Express.js, React.js, and Node.js).',
+		desc: 'Я разработал полноценную платформу для недвижимости под названием "Super Estate", используя стек MERN (MongoDB, Express.js, React.js и Node.js).',
 		link: 'https://super-estate-client.vercel.app/',
 		github: 'https://github.com/ivanbutakov0/super_estate',
 		techs: [
@@ -52,7 +52,7 @@ const projects: ProjectType[] = [
 		id: 3,
 		name: 'BoardWise',
 		img: '/boardwise.png',
-		desc: 'The project involves creating a comprehensive project management tool centered around Kanban boards.',
+		desc: 'Проект предполагает создание комплексного инструмента управления проектами, основанного на канбан-досках.',
 		link: '',
 		github: 'https://github.com/ivanbutakov0/board_wise',
 		techs: [
