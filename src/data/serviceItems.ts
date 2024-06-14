@@ -7,18 +7,18 @@ type ServiceItemType = {
 const serviceItems: ServiceItemType[] = [
 	{
 		title: 'UI/UX Design',
-		text: `I can help you design user interfaces and user experiences that are both beautiful and functional. This includes everything from designing the layout of your website or app to creating wireframes and prototypes.`,
-		button: 'Contact me',
+		text: `Я могу помочь вам разработать красивые и функциональные пользовательские интерфейсы. Это включает в себя все - от разработки макета вашего веб-сайта или приложения до создания каркасов и прототипов.`,
+		button: 'Свяжись со мной',
 	},
 	{
 		title: 'Frontend Development',
-		text: `I can turn your UI/UX designs into a real, functional website or app. This includes writing the code that makes your website or app work.`,
-		button: 'Contact me',
+		text: `Я могу превратить ваш дизайн пользовательского интерфейса в реальный, функциональный веб-сайт или приложение. Это включает в себя написание кода, который заставит ваш веб-сайт или приложение работать.`,
+		button: 'Свяжись со мной',
 	},
 	{
 		title: 'Backend Development',
-		text: `I can create the server-side functionality for your website or app. This includes writing the code that stores and manages your data.`,
-		button: 'Contact me',
+		text: `Я могу создать серверную функциональность для вашего веб-сайта или приложения. Это включает в себя написание кода, который хранит ваши данные и управляет ими.`,
+		button: 'Свяжись со мной',
 	},
 ]
 

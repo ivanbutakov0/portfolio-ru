@@ -30,7 +30,8 @@ const Services = () => {
 			>
 				<motion.div className={styles.textContainer} variants={variants}>
 					<p>
-						I focus on building modern web applications <br /> for you
+						Я специализируюсь на создании современных веб-приложений <br /> для
+						вас
 					</p>
 					<hr />
 				</motion.div>
@@ -39,15 +40,15 @@ const Services = () => {
 					<div className={styles.title}>
 						<img src='/people.webp' alt='happy clients' />
 						<h2>
-							<strong>Unique</strong> solutions
+							<strong>Уникальные</strong> решения
 						</h2>
 					</div>
 
 					<div className={styles.title}>
 						<h2>
-							<strong>for your</strong> company.
+							<strong>для вашего</strong> бизнеса.
 						</h2>
-						<div className={styles.titleButton}>What I do?</div>
+						<div className={styles.titleButton}>Что я делаю?</div>
 					</div>
 				</motion.div>
 
