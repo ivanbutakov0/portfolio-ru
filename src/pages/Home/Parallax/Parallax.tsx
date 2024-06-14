@@ -29,7 +29,7 @@ const Parallax = ({ type }: Props) => {
 			}}
 		>
 			<motion.h2 className={styles.title} style={{ y: textY }}>
-				{type === 'services' ? 'What I do' : 'What I did'}
+				{type === 'services' ? 'Что я делаю' : 'Что я делал'}
 			</motion.h2>
 			<div
 				className={styles.mountains}
