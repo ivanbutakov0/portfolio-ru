@@ -56,7 +56,7 @@ const Contacts = () => {
 				>
 					<motion.div className={styles.contentContainer} variants={variants}>
 						<motion.h2 className={styles.title} variants={variants}>
-							Let's work together
+							Давайте работать вместе
 						</motion.h2>
 						<motion.div className={styles.mailContainer} variants={variants}>
 							<h3>Mail</h3>
