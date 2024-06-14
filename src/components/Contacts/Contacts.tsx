@@ -5,6 +5,9 @@ const Contacts = () => {
 	return (
 		<div>
 			<ul className={styles.list}>
+				<li title='en'>
+					<a href='https://ivan-butakov-portfolio.vercel.app/'>En</a>
+				</li>
 				{contacts.map(contact => (
 					<li title={contact.name} className={styles.item} key={contact.name}>
 						<a href={contact.link} target='_blank'>
