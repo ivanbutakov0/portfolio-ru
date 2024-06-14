@@ -42,7 +42,7 @@ const Hero = () => {
 						whileInView='animate'
 					>
 						<motion.h2 className={styles.subtitle} variants={textVariants}>
-							Hi, I'm Ivan
+							Привет! Меня зовут Иван
 						</motion.h2>
 						<motion.h1 className={styles.title} variants={textVariants}>
 							Frontend developer
@@ -52,9 +52,9 @@ const Hero = () => {
 							variants={textVariants}
 						>
 							<Button href='#portfolio' style='outlined'>
-								See the Latest Works
+								Перейти к последним работам
 							</Button>
-							<Button href='#contacts'>Contact Me</Button>
+							<Button href='#contacts'>Свяжись со мной</Button>
 						</motion.div>
 						<motion.img
 							className={styles.scroll}
