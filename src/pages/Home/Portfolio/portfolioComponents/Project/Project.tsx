@@ -37,13 +37,16 @@ const Project = ({ project }: ProjectProps) => {
 						))}
 					</ul>
 					<div className={styles.btnContainer}>
-						<a
-							className={styles.projectLink}
-							href={project.link}
-							target='_blank'
-						>
-							See Demo
-						</a>
+						{project.link && (
+							<a
+								className={styles.projectLink}
+								href={project.link}
+								target='_blank'
+							>
+								See Demo
+							</a>
+						)}
+
 						<a
 							className={styles.codeLink}
 							href={project.github}
